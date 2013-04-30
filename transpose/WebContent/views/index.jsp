@@ -29,18 +29,18 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </a>
-          <a class="brand" href="#">Transpose</a>
+          <a class="brand" href="./">Transpose</a>
           <div class="nav-collapse collapse">
             <ul class="nav">
-              <li class="active"><a href="#">Home</a></li>
-              <li><a href="#about">About</a></li>
+              <li class="active"><a href="./">Home</a></li>
+              <li><a href="./about">About</a></li>
             </ul>
           </div>
         </div>
       </div>
     </div>
 
-
+<h1>This is the Home Page</h1>
 
 </body>
 </html>
