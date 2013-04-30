@@ -7,8 +7,8 @@
 	<title>Transpose</title>
     <!-- Le styles -->
     <link href="./bootstrap/css/bootstrap.css" rel="stylesheet">
-    <link href="./boostrap/css/prettify.css" rel="stylesheet">
-    <link href="./boostrap/css/utils.css" rel="stylesheet">
+    <link href="./bootstrap/css/prettify.css" rel="stylesheet">
+    <link href="./bootstrap/css/utils.css" rel="stylesheet">
     <style type="text/css">
       body {
         padding-top: 60px;
@@ -35,7 +35,7 @@
               <li class="active"><a href="#">Home</a></li>
               <li><a href="#about">About</a></li>
             </ul>
-          </div><!--/.nav-collapse -->
+          </div>
         </div>
       </div>
     </div>
