@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 
-@WebServlet("/")
+@WebServlet("/index")
 public class IndexServlet extends HttpServlet {
 	private static final String VIEWS_INDEX_JSP = "/views/index.jsp";
 	private static final long serialVersionUID = 1L;
