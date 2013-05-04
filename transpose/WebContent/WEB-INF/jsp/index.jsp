@@ -8,6 +8,6 @@
 </head>
 <body>
 <h1>This is the Home Page</h1>
-
+<button class="btn" type="button">Transpose</button>
 </body>
 </html>
