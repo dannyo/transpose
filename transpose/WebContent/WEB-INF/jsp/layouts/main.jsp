@@ -2,6 +2,10 @@
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
+<%-- <jsp:useBean id="main" class="com.transpose.MainController" scope="page">
+	<jsp:setProperty property="homeClass" name="main" value="active"/>
+	<jsp:setProperty property="aboutClass" name="main" value="active"/>
+</jsp:useBean> --%>
 	<head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<title>Transpose</title>
@@ -32,8 +36,15 @@
           <a class="brand" href="./">Transpose</a>
           <div class="nav-collapse collapse">
             <ul class="nav">
-              <li class="active"><a href="./">Home</a></li>
-              <li><a href="./about">About</a></li>
+    		 <li class="active"><a href="./">Home</a></li>
+       <%--        <li class="<jsp:getProperty property="homeClass" name="main"/>"><a href="./">Home</a></li> --%>
+             <%--  <li class="<g:pageProperty name="page.homeClass"/>"><a href=""><i class="icon icon-home icon-white"></i> Home</a></li>
+              <li class="<g:pageProperty name="page.uploadClass"/>"><g:link controller="preValidation"><i class="icon icon-upload icon-white"></i> Upload</g:link></li>
+              <li class="<g:pageProperty name="page.uploadStatusClass"/>"><a href="upload/execute"><i class="icon icon-star icon-white"></i> Status</a></li>
+              <li class="<g:pageProperty name="page.uploadLogClass"/>"><a href="log/list"><i class="icon icon-info-sign icon-white"></i> Logs</a></li>
+              <li class="<g:pageProperty name="page.recoverClass"/>"><g:link controller="recover"><i class="icon icon-upload icon-white"></i> Recover</g:link></li>
+               --%>
+           	 <li><a href="./about">About</a></li>
             </ul>
           </div>
         </div>

@@ -8,6 +8,16 @@
 </head>
 <body>
 <h1>This is the Home Page</h1>
-<button class="btn" type="button">Transpose</button>
+
+<form method="POST" action="upload" enctype="multipart/form-data" >
+            <span>File:</span>
+            <input type="file" name="file" id="file" /> <br/>
+<!--             Destination:
+            <input type="text" value="/tmp" name="destination"/> -->
+            </br>
+            <input class ="btn" type="submit" value="Transpose" name="upload" id="transpose" />
+        </form>
+<!-- <button style="width:100%" class="btn" type="button">Transpose</button> -->
+
 </body>
 </html>

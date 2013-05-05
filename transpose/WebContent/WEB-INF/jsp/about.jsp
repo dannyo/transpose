@@ -5,7 +5,6 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<title>About Page</title>
 </head>
 <body>
 <h1>This is the About page</h1>
