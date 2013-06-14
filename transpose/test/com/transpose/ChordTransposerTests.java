@@ -61,4 +61,17 @@ public class ChordTransposerTests {
 		assertEquals("B", newChord);
 	}
 	
+	@Test
+	public void shouldTransposeChordUpWithBassNote(){
+		String chord = "D/F#";
+		String newChord = chordTransposer.transposeChord(chord, 2);
+		assertEquals("E/G#", newChord);		
+	}
+	
+	@Test
+	public void shouldTransposeChordDownWithBassNote(){
+		String chord = "E/G#";
+		String newChord = chordTransposer.transposeChord(chord, -2);
+		assertEquals("D/F#", newChord);		
+	}
 }
