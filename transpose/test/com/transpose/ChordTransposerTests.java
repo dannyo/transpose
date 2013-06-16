@@ -74,4 +74,39 @@ public class ChordTransposerTests {
 		String newChord = chordTransposer.transposeChord(chord, -2);
 		assertEquals("D/F#", newChord);		
 	}
+	
+	@Test
+	public void shouldTransposeMinors(){
+		String chord = "Am";
+		String newChord = chordTransposer.transposeChord(chord, 2);
+		assertEquals("Bm", newChord);	
+	}
+	
+	@Test
+	public void shouldTransposeMinorsWithBassNote(){
+		String chord = "Am/G";
+		String newChord = chordTransposer.transposeChord(chord, 2);
+		assertEquals("Bm/A", newChord);	
+	}
+	
+	@Test
+	public void shouldTranspose7thChords(){
+		String chord = "Am7";
+		String newChord = chordTransposer.transposeChord(chord, 2);
+		assertEquals("Bm7", newChord);	
+	}
+	
+	@Test
+	public void shouldTransposeSuspendedChords(){
+		String chord = "Asus";
+		String newChord = chordTransposer.transposeChord(chord, 2);
+		assertEquals("Bsus", newChord);	
+	}
+	
+	@Test
+	public void shouldTransposeSuspendedChordsWithBassNote(){
+		String chord = "Dsus/G";
+		String newChord = chordTransposer.transposeChord(chord, 2);
+		assertEquals("Esus/A", newChord);	
+	}
 }
